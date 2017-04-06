@@ -42,9 +42,29 @@ zwave:
 /srv/homeassistant/lib/python3.4/site-packages/libopenzwave-0.3.2-py3.4-linux-armv7l.egg/config
 ```
 
+## Docker Installation 
+
+http://blog.alexellis.io/getting-started-with-docker-on-raspberry-pi/
+
+```
+curl -sSL get.docker.com | sh
+sudo systemctl enable docker
+sudo systemctl start docker
+sudo usermod -aG docker pi
+```
+
+docker-compose third party install:
+
+https://github.com/hypriot/arm-compose#installation
+
+
 ## Z-Wave configuration
 
+Use docker-compose image:
+
 https://www.reddit.com/r/homeassistant/comments/522n6x/manually_install_home_assistant_with_openzwave/
+
+Service starts on port ```8080```
 
 # Cast devices
 
